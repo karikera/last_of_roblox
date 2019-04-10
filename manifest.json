@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Last of Roblox",
+  "version": "1.0.0.8",
+  "applications": {
+	"gecko": {
+		"id": "last_of_roblox@rua.kr"
+	}
+  },
+  "description": "Last server finder for Roblox",
+  "icons": {
+	"48": "last_of_roblox_48.png",
+	"96": "last_of_roblox_96.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://web.roblox.com/games/*", "*://web.roblox.com/users/friends"],
+      "js": ["injecter.js"]
+    }
+  ],
+  "web_accessible_resources": [
+	  "games.js",
+	  "friends.js"
+  ]
+}
