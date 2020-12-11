@@ -1,5 +1,8 @@
 {
 	"compilerOptions": {
+		"target": "es6",
+		"module": "commonjs",
+		"sourceMap": true,
 		"noImplicitThis": true,
 		"lib": ["dom", "esnext"],
 		"typeRoots": ["node_modules/@types", "node_modules/web-ext-types"]
